@@ -11,7 +11,6 @@
     "@types/node": "^12.20.16",
     "@types/react": "^17.0.14",
     "@types/react-dom": "^17.0.9",
-    "eslint": "^7.30.0",
     "graphql": "^15.5.1",
     "husky": "^7.0.1",
     "prettier": "^2.3.2",
@@ -25,13 +24,19 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged",
+    "lint": "eslint . --fix",
+    "pre-commit": "lint-staged"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "devDependencies": {
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.1",
+    "prettier": "2.3.2"
   },
   "browserslist": {
     "production": [

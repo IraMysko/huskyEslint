@@ -1,0 +1,15 @@
+{"editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+"eslint.validate": [
+    "javascript"
+],
+"editor.defaultFormatter": "dbaeumer.vscode-eslint",
+"cSpell.words": [
+    "Masha",
+    "Olia",
+    "linebreak",
+    "plusplus"
+],
+"eslint.format.enable": true
+}
